@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
-import SignPage from './containers/LoginPage/SignPage';
+import SignPage from './containers/Sign/SignPage';
 
 function App() {
   return (

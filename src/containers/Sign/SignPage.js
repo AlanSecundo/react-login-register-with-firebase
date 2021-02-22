@@ -4,6 +4,7 @@ import Background from "../../assets/surf-background.jpg";
 import { AiOutlineLaptop } from "react-icons/ai";
 import LoginComponent from "./LoginComponent";
 import { isMobile } from "react-device-detect";
+import RegisterComponent from "./RegisterComponent";
 
 const Container = styled.div`
   display: grid;
@@ -80,6 +81,7 @@ const RowDiv = styled.div`
 
   @media (max-width: 800px) {
     margin-top: 1rem;
+    justify-content: flex-start;
   }
 `;
 
@@ -161,7 +163,7 @@ export default function SignPage() {
             Sign up
           </SignUp>
         </RowDiv>
-        {isLogin ? <LoginComponent /> : <div></div>}
+        {isLogin ? <LoginComponent /> : <RegisterComponent />}
       </LoginAndRegisterContainer>
     </Container>
   );
